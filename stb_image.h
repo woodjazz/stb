@@ -6966,6 +6966,7 @@ static stbi_uc *stbi__process_gif_raster(stbi__context *s, stbi__gif *g) {
 // specific disposal format
 static stbi_uc *stbi__gif_load_next(stbi__context *s, stbi__gif *g, int *comp,
                                     int req_comp, stbi_uc *two_back) {
+  (void)req_comp;
   int dispose;
   int first_frame;
   int pi;
