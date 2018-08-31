@@ -7206,6 +7206,7 @@ static void *stbi__load_gif_main(stbi__context *s, int **delays, int *x, int *y,
 
 static void *stbi__gif_load(stbi__context *s, int *x, int *y, int *comp,
                             int req_comp, stbi__result_info *ri) {
+  (void)ri;
   stbi_uc *u = 0;
   stbi__gif g;
   memset(&g, 0, sizeof(g));
